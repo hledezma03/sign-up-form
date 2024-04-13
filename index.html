@@ -27,19 +27,11 @@
                 <div class="body-text">
                     Let's do this!
                 </div>
-                <div class="input-container">
+                <form class="input-container">
                     <ul>
                         <li>
                             <label for="user-first-name">FIRST NAME</label>
                             <input type="text" id="user-first-name" name="first-name">
-                        </li>
-                        <li>
-                            <label for="user-mail">EMAIL</label>
-                            <input type="email" id="user-mail" name="mail">
-                        </li>
-                        <li>
-                            <label for="user-password">PASSWORD</label>
-                            <input type="password" id="user-password" name="password">
                         </li>
                         <li>
                             <label for="user-last-name">LAST NAME</label>
@@ -50,11 +42,19 @@
                             <input type="text" id="user-phone" name="phone-number">
                         </li>
                         <li>
+                            <label for="user-mail">EMAIL</label>
+                            <input type="email" id="user-mail" name="mail">
+                        </li>
+                        <li>
+                            <label for="user-password">PASSWORD</label>
+                            <input type="password" id="user-password" name="password" minlength="6">
+                        </li>
+                        <li>
                             <label for="user-confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="user-confirm-password" name="confirm-password">
+                            <input type="password" id="user-confirm-password" name="confirm-password" minlength="6">
                         </li>
                     </ul>
-                </div>
+                </form>
             </div>
             <div class="footer">
                 <button type="submit">Create Account</button>
@@ -65,5 +65,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -2,11 +2,14 @@ body {
     padding: 2rem 8rem;
     text-align: center;
     background-color: #000;
+    box-sizing: border-box;
 }
+
 .container {
     margin: auto;
     display: flex;
-    width: 80vw;
+    width: 100%;
+    max-width: 1200px;
     height: 90vh;
     background-color: #f0f0f0;
 }
@@ -81,6 +84,7 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    flex-direction: row;
 }
 
 label {
@@ -93,13 +97,27 @@ label {
 }
 
 input {
-    width: 200px;
-    border: 1px solid #c4c2c2;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #E5E7EB;
     border-radius: 4px;
 }
 
+input:focus {
+    border:1px solid blue;
+    outline: none;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
 li {
-    margin: 12px 48px 12px 0;
+    margin: 12px 24px 12px 0;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
 }
 
 .footer {
@@ -114,7 +132,7 @@ button {
     border: none;
     border-radius: 5px;
     padding: 12px 32px;
-    background-color: #41864f;
+    background-color: #596d48;
     color: #f0f0f0;
     font-weight: bold;
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
@@ -123,7 +141,7 @@ button {
 
 a {
     text-decoration: none;
-    color: #41864f;
+    color: #596d48;
 }
 
 .footer-text {
